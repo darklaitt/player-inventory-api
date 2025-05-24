@@ -1,0 +1,146 @@
+{
+  "info": {
+    "name": "Player Inventory API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u0438\u0433\u0440\u043e\u043a\u0430",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"Knight01\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/players/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "players",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u0440\u0435\u0434\u043c\u0435\u0442 \u0438\u0433\u0440\u043e\u043a\u0443",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Sword of Light\", \"type\": \"weapon\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/players/1/items/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "players",
+            "1",
+            "items",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0432\u0441\u0435\u0445 \u0438\u0433\u0440\u043e\u043a\u043e\u0432",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/players/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "players",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u044b \u0438\u0433\u0440\u043e\u043a\u0430",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/players/1/items/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "players",
+            "1",
+            "items",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u0438\u0433\u0440\u043e\u043a\u0430",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8000/players/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "players",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u043f\u0440\u0435\u0434\u043c\u0435\u0442 \u0438\u0433\u0440\u043e\u043a\u0430",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8000/items/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "items",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
